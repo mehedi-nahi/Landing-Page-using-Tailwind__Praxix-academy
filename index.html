@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>first-tailwind-project</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+
+<body class="bg-slate-100 text-slate-800 font-[Baloo_Da_2] ">
+
+  <header class="w-full max-w-100vw mx-2 px-4 py-3 ">
+    <ul class="tracking-wider flex items-center  text-sm">
+      <li>
+        <img class="border-r border-gray-300" src="src/assets/navbar/icon.png" alt="Icon">
+      </li>
+
+      <div class="flex-1 flex items-center justify-between pl-6">
+
+        <div>
+          <h1 class=" font-bold text-base">শিক্ষার্থী তালিকা</h1>
+        </div>
+
+        <div class="flex items-end gap-4 text pr-1">
+          <li>
+            <img class="h-8 w-8 object-contain" src="src/assets/navbar/3d_avatar_13.png">
+          </li>
+          <li>
+            <img class="h-8 w-8 object-contain" src="src/assets/navbar/Button.png">
+          </li>
+          <li>
+            <img class="h-8 w-8 object-contain" src="src/assets/navbar/Vector.png">
+          </li>
+        </div>
+      </div>
+    </ul>
+  </header>
+
+  <section class="w-full items-start max-w-100vw mx-2 flex overflow-hidden">
+    <!-- //sideNav -->
+    <nav class="w-60 flex flex-col px-2 py-3 space-y-5 border-r border-gray-500">
+
+      <div class="space-y-4">
+        <p class="text-[10px] text-slate-500 tracking-widest px-3 py-1">অ্যাকাউন্ট</p>
+
+        <a href="#" class="hover:bg-blue-100 rounded-md transition-colors block">
+          <span class="w-4 h-4 rounded-sm inline-flex">
+          </span> ড্যাশবোর্ড
+        </a>
+
+        <a href="#" class="hover:bg-blue-100 rounded-md transition-colors block">
+          <span class="w-4 h-4 rounded-sm inline-flex">
+          </span> AI কনটেন্ট স্টুডিও
+        </a>
+
+        <a href="#" class="hover:bg-blue-100 rounded-md transition-colors block">
+          <span class="w-4 h-4 rounded-sm inline-flex">
+          </span> প্রশ্ন তৈরি করুন
+        </a>
+
+        <a href="#" class="hover:bg-blue-100 rounded-md transition-colors block">
+          <span class="w-4 h-4 rounded-sm inline-flex">
+          </span> রেডিমেড প্রশ্ন
+        </a>
+
+        <a href="#" class="hover:bg-blue-100 rounded-md transition-colors block">
+          <span class="w-4 h-4 rounded-sm inline-block">
+          </span> প্রশ্ন ব্যাংক
+        </a>
+
+        <a href="#" class="hover:bg-blue-100 rounded-md transition-colors block">
+          <span class="w-4 h-4 rounded-sm inline-block">
+          </span> আমার ডেটাবেজ
+        </a>
+
+      </div>
+
+      <div class="space-y-4">
+        <p class="text-[10px] text-slate-500 tracking-widest px-3 py-1">একাডেমি</p>
+
+        <a href="#" class="hover:bg-blue-100 rounded-md transition-colors block">
+          <span class="w-4 h-4 rounded-sm inline-block">
+          </span> একাডেমি তথ্য
+        </a>
+
+        <a href="#" class="hover:bg-blue-100 rounded-md transition-colors block">
+          <span class="w-4 h-4 rounded-sm inline-block">
+          </span> শিক্ষার্থী তালিকা
+        </a>
+
+        <a href="#" class="hover:bg-blue-100 rounded-md transition-colors block">
+          <span class="w-4 h-4 rounded-sm inline-block">
+          </span> শিক্ষক তালিকা
+        </a>
+
+        <a href="#" class="hover:bg-blue-100 rounded-md transition-colors block">
+          <span class="w-4 h-4 rounded-sm inline-block">
+          </span> পরীক্ষার তালিকা
+        </a>
+
+        <a href="#" class="hover:bg-blue-100 rounded-md transition-colors block">
+          <span class="w-4 h-4 rounded-sm inline-block">
+          </span> হোমওয়ার্ক তালিকা
+        </a>
+
+      </div>
+
+      <div class="space-y-4">
+        <p class="text-[10px] text-slate-500 tracking-widest px-3 py-1">অ্যাকাউন্ট</p>
+
+        <a href="#" class="hover:bg-blue-100 rounded-md transition-colors block">
+          <span class="w-4 h-4 rounded-sm inline-block">
+          </span> সাবস্ক্রিপশন
+        </a>
+
+        <a href="#" class="hover:bg-blue-100 rounded-md transition-colors block">
+          <span class="w-4 h-4 rounded-sm inline-block">
+          </span> রিপোর্ট ও অ্যানালিটিক্স
+        </a>
+
+        <a href="#" class="hover:bg-blue-100 rounded-md transition-colors block">
+          <span class="w-4 h-4 rounded-sm inline-block">
+          </span> কিভাবে কাজ করে
+        </a>
+
+
+      </div>
+
+    </nav>
+
+    <!-- main-body -->
+    <div class="flex-1 overflow-hidden p-6">
+      <div class="grid grid-cols-2 lg:grid-cols-5 gap-4">
+        <!-- Card 1-Total students -->
+        <div class="bg-white rounded-xl overflow-hidden">
+          <div class="flex items-center gap-3 p-4">
+            <div class="w-10 h-10">
+              <img src="/src/assets/cards/image1.png">
+            </div>
+            <div>
+              <p class="text-xs">মোট শিক্ষার্থী</p>
+              <p class="text-2xl  text-blue-500">২,৪৫৮</p>
+            </div>
+          </div>
+          <div class="mx-4 mb-3"></div>
+          <p class="text-[10px] text-center bg-blue-400 text-white py-1 font-medium">প্রবৃদ্ধি: +১১.২৪%</p>
+        </div>
+        <!-- Card 2: Active students (green) -->
+        <div class="bg-white rounded-xl  overflow-hidden">
+          <div class="flex items-center gap-3 p-4">
+            <div class="w-10 h-10">
+              <img src="/src/assets/cards/image1.png">
+            </div>
+            <div>
+              <p class="text-xs ">সক্রিয় শিক্ষার্থী</p>
+              <p class="text-2xl  text-green-500">২,৪৫৮</p>
+            </div>
+          </div>
+          <div class=" mx-4 mb-3"></div>
+          <p class="text-[10px] text-center bg-green-500 text-white py-1 font-medium">প্রবৃদ্ধি: +১১.২৪%</p>
+        </div>
+
+        <!-- Card 3: Inactive students (red) -->
+        <div class="bg-white rounded-xl overflow-hidden">
+          <div class="flex items-center gap-3 p-4">
+            <div class="w-10 h-10">
+              <img src="/src/assets/cards/image1.png">
+            </div>
+            <div>
+              <p class="text-xs ">নিষ্ক্রিয় শিক্ষার্থী</p>
+              <p class="text-2xl  text-red-500">২৪৪</p>
+            </div>
+          </div>
+          <div class=" mx-4 mb-3"></div>
+          <p class="text-[10px] text-center bg-red-500 text-white py-1 font-medium">প্রবৃদ্ধি: -১১.২৪%</p>
+        </div>
+
+        <!-- Card 4: New this month (yellow) -->
+        <div class="bg-white rounded-xl overflow-hidden">
+          <div class="flex items-center gap-3 p-4">
+            <div class="w-10 h-10">
+              <img src="/src/assets/cards/image1.png">
+            </div>
+            <div>
+              <p class="text-xs ">এই মাসে নতুন</p>
+              <p class="text-2xl  text-yellow-500">৮৭</p>
+            </div>
+          </div>
+          <div class=" mx-4 mb-3"></div>
+          <p class="text-[10px] text-center bg-yellow-500 text-white py-1 font-medium">প্রবৃদ্ধি: +১১.২৪%</p>
+        </div>
+
+        <!-- Card 5: Total (dark) -->
+        <div class="bg-white rounded-xl overflow-hidden">
+          <div class="flex items-center gap-3 p-4">
+            <div class="w-10 h-10">
+              <img src="/src/assets/cards/image1.png">
+            </div>
+            <div>
+              <p class="text-xs ">মোট শিক্ষার্থী</p>
+              <p class="text-2xl text-blue-500">২,৪৫৮</p>
+            </div>
+          </div>
+          <div class=" mx-4 mb-3"></div>
+          <p class="text-[10px] text-center bg-slate-800 text-white py-1 font-medium">প্রবৃদ্ধি: +১১.২৪%</p>
+        </div>
+      </div>
+
+      <section class="bg-white rounded-xl h-100vh">
+        <div class="flex flex-wrap gap-3 p-4 m-4 justify-between items-center">
+          <div class="text-sm min-w-40 px-1 py-2 rounded-xl">
+            <input type="text" placeholder="শিক্ষার্থীর নাম, ফোন....."
+              class="h-10 rounded-xs px-5 w-xs border border-gray-200">
+          </div>
+          <select class="text-sm px-3 text-slate-500 border h-10 border-gray-200 rounded-xs">
+            <option>Motijheel Govt. Boys's High School</option>
+            <option>Motijheel Govt. Girl's High School</option>
+            <option>Motijheel Ideal School</option>
+            <option>Mugda Govt. High School</option>
+            <option>Agrabad Govt. High School</option>
+            <option>Agrabad Govt. High School</option>
+            <option>Agrabad Govt. High School</option>
+            <option>Agrabad Govt. High School</option>
+            <option>Agrabad Govt. High School</option>
+            <option>Agrabad Govt. High School</option>
+            <option>Agrabad Govt. High School</option>
+          </select>
+          <select class="text-sm px-4 text-slate-500 border h-10 border-gray-200 rounded-xs">
+            <option>All Class</option>
+            <option>Class: 10</option>
+            <option>Class: 9</option>
+            <option>Class: 8</option>
+            <option>Class: 7</option>
+            <option>Class: 6</option>
+            <option>Class: 5</option>
+          </select>
+          <select class="text-sm px-4 text-slate-500 border h-10 border-gray-200 rounded-xs">
+            <option>All status</option>
+            <option>Active</option>
+            <option>Inactive</option>
+          </select>
+          <button
+            class="text-sm px-4 items-center h-10 text-white rounded-xs bg-blue-500 hover:bg-blue-800 hover:cursor-pointer">
+            নতুন শিক্ষার্থী</button>
+        </div>
+        <div class="w-full rounded-xl align-middle border border-gray-200 rounded-b-sm">
+
+          <div class="px-6 py-2 grid grid-cols-7  tracking-wider bg-slate-200 ">
+            <div class=""><span>নং</span></div>
+            <div class="text-center"><span>শিক্ষার্থীর নাম</span> </div>
+            <div class="text-center"><span>বিদ্যালয়/কলেজ</span> </div>
+            <div class="text-center"><span>শ্রেণি</span> </div>
+            <div class="text-center"><span>যোগাযোগ</span> </div>
+            <div class="text-center"><span>স্ট্যাটাস</span></div>
+            <div class="text-center"><span>অ্যাকশন</span></div>
+          </div>
+
+          <div class="px-6 py-2 grid grid-cols-7 items-center justify-between">
+            <span class="font-[Baloo_Da_2]">০১</span>
+            <span class="">মোহাম্মদ রাফি</span>
+            <span>সরকারি ল্যাবরেটরি উচ্চ বিদ্যালয়</span>
+            <span>৯ম শ্রেণি</span>
+            <span class="">০১৭১২-৪৫৮৭২১</span>
+            <button class=" py-2 w-18 border border-green-500 text-green-500 bg-green-200">Active</button>
+            <span></span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
